@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("/assets/fonts/Noto_Sans/static/NotoSans-Regular.ttf");
+}
+.vertical-icon-bar {
+  width: 5%;
+  left: 60px;
+}
+
+.hamburger {
+  background-color: #34435E;
+  padding: 18px;
+  width: fit-content;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.vertical-icon-bar,
+.bottom-icon-bar {
+  background-color: #34435E;
+}
+.vertical-icon-bar i,
+.bottom-icon-bar i {
+  padding: 18px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.vertical-icon-bar i.active,
+.bottom-icon-bar i.active {
+  background-color: green;
+}
+.vertical-icon-bar i:hover,
+.bottom-icon-bar i:hover {
+  cursor: pointer;
+  background-color: #001B2E;
+}
+
+@media (max-width: 1024px) {
+  .vertical-icon-bar {
+    width: fit-content;
+    left: 60px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

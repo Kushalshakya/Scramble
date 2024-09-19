@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <meta name="description" content="Template Title">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Kushal Shakya">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/node_modules/jquery/dist/jquery.min.js">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="vertical-icon-bar-wrapper">
+        <i class="material-icons icon hamburger text-white m-2" data-bs-toggle="collapse" data-bs-target="#collapseElement" role="button">menu</i>
+        <div class="vertical-icon-bar text-white position-absolute top-0 m-2 collapse" id="collapseElement">
+            <i class="material-icons icon">home</i>
+            <i class="material-icons icon">search</i>
+            <i class="material-icons icon">mail</i>
+            <i class="material-icons icon">public</i>
+            <i class="material-icons icon">delete</i>
+        </div>
+    </div>
+
+    <div class="bottom-icon-bar text-white d-flex justify-content-around position-absolute bottom-0 w-100">
+        <i class="material-icons icon active">home</i>
+        <i class="material-icons icon">search</i>
+        <i class="material-icons icon">mail</i>
+        <i class="material-icons icon">public</i>
+        <i class="material-icons icon">delete</i>
+    </div>
+    <script src="./script.js" defer type="text/javascript"></script>
+</body>
+</html>
