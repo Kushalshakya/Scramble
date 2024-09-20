@@ -17,14 +17,30 @@
   left: 60px;
 }
 
-.hamburger {
+.animated-bar {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  margin: 8px;
   background-color: #34435E;
-  padding: 18px;
-  width: fit-content;
-  text-align: center;
+}
+.animated-bar .bar {
+  width: 70%;
+  height: 3px;
+  border-radius: 6px;
+  background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
-.hamburger:hover {
+.animated-bar.active .bar-1 {
+  transform: translate(0, 7px) rotate(-45deg);
+}
+.animated-bar.active .bar-2 {
+  display: none;
+}
+.animated-bar.active .bar-3 {
+  transform: translate(0, 0px) rotate(45deg);
+}
+.animated-bar:hover {
   cursor: pointer;
 }
 

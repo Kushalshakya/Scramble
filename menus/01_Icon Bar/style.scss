@@ -16,18 +16,39 @@
 
 $primary-color: #34435E;
 $accent-color: #001B2E;
+$white: #fff;
 
 .vertical-icon-bar{
     width: 5%;
     left: 60px;
 }
 
-.hamburger{
+.animated-bar{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin: 8px;
     background-color: $primary-color;
-    padding: 18px;
-    width: fit-content;
-    text-align: center;
-    transition: all .3s ease-in-out;
+    .bar{
+        width: 70%;
+        height: 3px;
+        border-radius: 6px;
+        background-color: $white;
+        transition: all .3s ease-in-out;
+    }
+    &.active{
+        .bar{
+            &-1{
+                transform: translate(0, 7px) rotate(-45deg);
+            }
+            &-2{
+                display: none;
+            }
+            &-3{
+                transform: translate(0, -0px) rotate(45deg);
+            }
+        }
+    }
     &:hover{
         cursor: pointer;
     }
