@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src: url('/assets/fonts/Noto_Sans/static/NotoSans-Regular.ttf');
+}
+
+body{
+    font-family: 'Poppins' !important;
+}
+
+#accordion{
+    p{
+        text-align: justify;
+        height: 0;
+        overflow: hidden;
+        transition: height .5 ease-in-out;
+    }
+    .accordion-container{
+        .accordion-section{
+            cursor: pointer;
+            .icon-remove{
+                display: none;
+            }
+        }
+    }
+}
