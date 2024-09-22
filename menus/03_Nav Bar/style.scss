@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src: url('/assets/fonts/Noto_Sans/static/NotoSans-Regular.ttf');
+}
+
+body{
+    font-family: 'Poppins' !important;
+    height: 100vh;
+    background-color: grey;
+}
+
+.header{
+    background-color: #96BBBB;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+ul{
+    list-style: none;
+    margin-bottom: 0 !important;
+    li{
+        padding: 12px 20px;
+        transition: all .5s ease-in-out;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        &:hover{
+            cursor: pointer;
+            background-color: #618985;
+        }
+    }
+    
+}
