@@ -25,6 +25,14 @@ body{
     position: sticky;
     top: 0;
     z-index: 10;
+    .header-container{
+        .hamburger{
+            display: none;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
 }
 ul{
     list-style: none;
@@ -41,5 +49,37 @@ ul{
             background-color: #618985;
         }
     }
-    
+}
+
+@media (max-width: 768px){
+    .header{
+        .header-container{
+            justify-content: space-between !important;
+            align-items: start !important;
+            ul{
+                padding-left: 0 !important;
+                transition: all .5s ease-in-out;
+                li{
+                    a{
+                        &:not(.home){
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .list-toggle.active{
+                flex-direction: column;
+                li{
+                    a{
+                        &:not(.home){
+                            display: block !important;
+                        }
+                    }
+                }
+            }
+            .hamburger{
+                display: block;
+            }
+        }
+    }
 }
