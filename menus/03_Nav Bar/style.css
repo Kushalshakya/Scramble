@@ -42,6 +42,9 @@ ul li {
 ul li a {
   text-decoration: none;
   color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 ul li:hover {
   cursor: pointer;
