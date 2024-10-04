@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body class="d-flex align-items-center justify-content-center vh-100 overflow-hiden">
+    <div id="guesser" class="guesser rounded">
+        <div class="guesser-container" id="guesser-container">
+            <div class="guesser-title-bar p-2 text-white">
+                <h1 class="m-0">Guess The Number</h1>
+            </div>
+            <div class="guesser-wrapper p-2 d-flex align-items-center justify-content-center">
+                <div class="guesser-wrapper-content d-flex gap-2">
+                    <input type="number" name="guesser-input" class="rounded px-2" placeholder="Enter a Digit">
+                    <button class="btn bg-success text-white">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

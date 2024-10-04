@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+body {
+  font-family: "Poppins" !important;
+  background-color: #9ED8DB !important;
+}
+
+.guesser {
+  min-width: 400px;
+  background-color: #153243;
+}
+.guesser .guesser-title-bar {
+  border-bottom: 2px solid #284B63;
+  cursor: move;
+}
+.guesser .guesser-title-bar h1 {
+  font-size: 18px !important;
+}
+.guesser .guesser-wrapper {
+  min-height: 150px;
+}
+.guesser .guesser-wrapper input {
+  outline: none;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
