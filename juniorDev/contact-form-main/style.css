@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url(./assets/fonts/static/Karla-Regular.ttf);
+}
+body {
+  background-color: #e0f1e7;
+  font-family: "Karla";
+}
+
+.contactForm .contactFormContainer input[type=text], .contactForm .contactFormContainer input[type=email], .contactForm .contactFormContainer textarea {
+  width: 100%;
+  outline: none;
+  font-size: 20px;
+  padding: 6px 8px;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 6px;
+}
+.contactForm .contactFormContainer input[type=text]:hover, .contactForm .contactFormContainer input[type=email]:hover, .contactForm .contactFormContainer textarea:hover {
+  border: 1px solid hsl(187, 24%, 22%);
+}
+.contactForm .contactFormContainer label {
+  padding: 8px 0;
+}
+.contactForm .contactFormContainer p {
+  margin: 0 !important;
+  padding: 8px 0 4px 0;
+}
+.contactForm .contactFormContainer .commonRadio {
+  width: 50%;
+  border: 1px solid hsl(186, 15%, 59%);
+  padding: 2px 10px;
+  border-radius: 6px;
+}
+
+/*# sourceMappingURL=style.css.map */
