@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <div id="newsletter" class="newsletter d-flex vh-100 w-100 justify-content-center align-items-center">
+    <div id="newsletter" class="newsletter active d-flex vh-100 w-100 justify-content-center align-items-center">
         <div class="newsletterContainer row py-3 px-2 bg-white  justify-content-center align-items-center">
             <div class="newsletterDescription col-6 ps-5">
                 <h2 class="py-2">Stay updated!</h2>
@@ -22,7 +22,7 @@
                 <form action="" class="py-2">
                     <label for="emailAddress">Email Address</label><br>
                     <input type="email" class="w-100 formEmail rounded mt-1 me-3 p-2" spellcheck="false" autocomplete="off" required>
-                    <button class="btn subscribeBtn w-100 text-white my-3 p-2">Subscribe to monthly newsletter</button>
+                    <button class="btn subscribeBtn w-100 text-white my-3 p-2" type="submit">Subscribe to monthly newsletter</button>
                 </form>
             </div>
             <div class="newsletterImage col-6 h-100">
@@ -31,10 +31,10 @@
         </div>
     </div>
 
-    <div id="subsciption" class="d-none subscription position-absolute  bg-white rounded py-3 px-4 top-50 start-50">
+    <div id="subsciption" class="subscription position-absolute  bg-white rounded py-3 px-4 top-50 start-50">
         <img src="./assets/images/icon-success.svg" width="40">
         <h2 class="pt-3 pb-2">Thanks for<br>subscribing!</h2>
-        <p>A confirmation email has been sent to<br><span class="userEmail">kushalshakya4114@gmail.com</span>. Please open it and click<br>the button inside to confirm your subscription.</p>
+        <p>A confirmation email has been sent to<br><span class="userEmail"></span>. Please open it and click<br>the button inside to confirm your subscription.</p>
         <button class="btn dismissBtn w-100 text-white my-2">Dismiss message</button>
     </div>
     <script src="./script.js"></script>

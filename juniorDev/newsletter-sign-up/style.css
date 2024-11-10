@@ -7,8 +7,15 @@ body {
   height: 100vh;
   font-family: "Roboto";
   background-color: #36384d;
+  overflow: hidden;
 }
 
+.newsletter {
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(100%);
+}
 .newsletter .newsletterContainer {
   border-radius: 20px;
   height: 600px;
@@ -37,9 +44,17 @@ body {
   object-fit: cover;
   background-size: contain;
 }
+.newsletter.active {
+  opacity: 1;
+  z-index: 2;
+  transform: translateX(0%);
+}
 
 .subscription {
+  opacity: 0;
+  z-index: -1;
   transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
 }
 .subscription h2 {
   font-size: 45px;
@@ -56,6 +71,10 @@ body {
 }
 .subscription .dismissBtn:hover {
   background: linear-gradient(to right, hsl(234, 29%, 20%), hsl(234, 29%, 20%), hsl(234, 29%, 20%));
+}
+.subscription.active {
+  opacity: 1;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */

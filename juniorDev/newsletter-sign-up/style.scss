@@ -7,8 +7,13 @@ body{
     height: 100vh;
     font-family: 'Roboto';
     background-color: #36384d;
+    overflow: hidden;
 }
 .newsletter{
+    opacity: 0;
+    z-index: -1;
+    transition: all .5s ease-in-out;
+    transform: translateX(100%);
     .newsletterContainer{
         border-radius: 20px;
         height: 600px;
@@ -41,10 +46,18 @@ body{
             }
         }
     }
+    &.active{
+        opacity: 1;
+        z-index: 2;
+        transform: translateX(0%);
+    }
 }
 
 .subscription{
+    opacity: 0;
+    z-index: -1;
     transform: translate(-50%,-50%);
+    transition: all .5s ease-in-out;
     h2{
         font-size: 45px;
         font-weight: 700;
@@ -57,9 +70,12 @@ body{
     }
     .dismissBtn{
         background: linear-gradient(to right,#ff5476, hsl(4, 100%, 67%), hsl(4, 100%, 67%));
-        // transition: all .5s ease-in-out;
         &:hover{
             background: linear-gradient(to right,hsl(234, 29%, 20%), hsl(234, 29%, 20%),hsl(234, 29%, 20%));
         }
+    }
+    &.active{
+        opacity: 1;
+        z-index: 2;
     }
 }
